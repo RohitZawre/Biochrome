@@ -1,0 +1,76 @@
+.container {
+  display: flex; /* Use flexbox to arrange items side by side */
+  height: 100%; /* Make sure the container takes the full height */
+} 
+
+#sidebar {
+  background-color: #ddd;
+  width: 320px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: 0.5px 0.5px 15px rgb(167, 166, 166);
+  border-radius: 5px;
+  position: relative;
+}
+
+.accordion-header {
+  background-color: #ddd;
+  color: #333;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.accordion-header:hover {
+  background-color: #666464;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.accordion-header.active {
+  background-color: #242424;
+  color: #fff;
+  font-size: 1.05rem;
+}
+
+.accordion-header a {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.accordion-content {
+  padding-left: 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+
+}
+
+.accordion-item {
+  padding: 8px 20px;
+  
+}
+
+.accordion-item a {
+  color: #333;
+  display: block;
+  text-decoration: none;
+  transition: color 0.5s ease, text-decoration 0.5s ease;
+}
+
+.accordion-item a:hover {
+  color: #555;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1.05rem;
+
+}
+
+#product-section {
+  flex: 1; /* Take up remaining space */
+  background-color: #fff; /* Example background color for product section */
+  padding: 20px;
+}
